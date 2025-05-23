@@ -85,6 +85,17 @@ Create a .env file at project root (do not commit), and add:
 TEST_USER_EMAIL=
 TEST_USER_PASSWORD=
 ```
+## 📜 Available Scripts
+
+| Script      | Command             | Description                                             |
+| ----------- | ------------------- | ------------------------------------------------------- |
+| `dev`       | `npm run dev`       | Build CSS & start live-server on port 5500              |
+| `test:unit` | `npm run test:unit` | Run Vitest unit tests                                   |
+| `test:e2e`  | `npm run test:e2e`  | Run Playwright end-to-end tests                         |
+| `lint`      | `npm run lint`      | Run ESLint                                              |
+| `prepare`   | `npm run prepare`   | Install Husky Git hooks (runs automatically on install) |
+
+
 ## 🤝 Contributing
 
 1. Fork this repo

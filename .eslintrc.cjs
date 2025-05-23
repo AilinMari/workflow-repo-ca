@@ -14,7 +14,7 @@ module.exports = {
   plugins: ['vitest'],
   overrides: [
     {
-      // All your unit and e2e test files
+      // all unit and e2e test files
       files: ['**/*.test.js', '**/*.spec.js'],
       env: {
         'vitest/globals': true,  // test(), expect(), etc.
@@ -22,17 +22,17 @@ module.exports = {
         browser: true             // allows `window`, `localStorage` etc.
       },
       rules: {
-        // if you still want to suppress undefined errors
+        
         'no-undef': 'off'
       }
     },
     {
-      // your configuration files (vite.config.js, playwright.config.js, etc.)
+      // configuration files (vite.config.js, playwright.config.js, etc.)
       files: ['*.config.js'],
       env: { node: true }
     }
   ],
   rules: {
-    // your other rules…
+
   }
 };
